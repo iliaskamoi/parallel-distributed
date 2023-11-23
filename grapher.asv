@@ -1,0 +1,9 @@
+function 
+threads = [1, 2, 3, 4, 8];
+exec_time = [0.543351, 0.396003, 0.297130, 0.306597, 0.362975];
+figure;
+plot(threads, exec_time,  'o-', 'LineWidth', 2);
+xlabel('Threads');
+ylabel('Execution Time (Secs)');
+title('Cilk');
+saveas(gcf, "/home/ilias/Desktop/distributed/figures/cilk.jpg");
